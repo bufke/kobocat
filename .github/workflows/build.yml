@@ -1,9 +1,8 @@
 name: Build
 on: [push]
 
-defaults:
+jobs:
   build-docker-image:
-    name: Build Docker image
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
