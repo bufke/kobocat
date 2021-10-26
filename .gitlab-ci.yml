@@ -22,7 +22,7 @@ test:
     - name: redis:3.2
       alias: redis_cache
   script:
-    - apt-get update && apt-get install -y ghostscript libxml2-dev libxslt-dev python3-dev gdal-bin libproj-dev gettext postgresql-client openjdk-11-jre
+    - apt-get update && apt-get install -y ghostscript libxml2-dev libxslt-dev python3-dev gdal-bin libproj-dev gettext postgresql-client openjdk-11-jre git
     - pip install -r dependencies/pip/dev.txt
     - pytest -vv -rf
 
